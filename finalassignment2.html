@@ -1,0 +1,139 @@
+<DOCTYPE html>
+<html>
+<head> 
+	<title> Rock,Paper,Scissors</title>
+	</head>
+<body>
+
+	<p id="p">CPI 101 - input1 </p>
+	<div id="yourSelection"> </div>
+	<div id="ranSelection"> </div>
+   
+	<script>
+			var value = window.prompt("please enter your name");
+
+			//1. writing the value into HTML element 
+			//document.getElementById("p").innerHTML = value + ", Welcome to play the game!!;"
+
+			//2. write the value into new HTML document 
+			document.write("<p>" + value + "</p>");
+
+			//3. promt window alert
+			window.alert (value);
+
+			//4. write it to console 
+			console.log(value);
+
+			document.write("Welcome to the Game!");
+
+   function play(){
+   	var computersTurn = ["Rock","Paper","Scissors"];
+    var comp = computersTurn[Math.floor(Math.random()*3)];
+    document.getElementById('randomWord').innerHTML = comp;
+    document.getElementById('randomWord2').innerHTML = comp;
+    }
+    function displayRadiValue(){
+    var select = document.getElementByIdName('Play');
+    for(i = 0; i < select.length; i++)}
+    	if(select[i].checked) {
+        document.getElementById("result").innerHTML = select[i].value;
+        }
+		
+		</script>
+
+
+</head>
+<body style="background-color:pink">
+	<br>
+	<br> 
+</body>
+
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Rock, Paper, Scissors!</h2>
+
+<table>
+  <tr>
+    <th>Your Selection:</th>
+    <th></th>
+    <th>Computer:</th>
+  </tr>
+  <th>
+ 
+<button name="subject" type="submit" value="fav_paper">Rock</button><br>
+<button name="subject" type="submit" value="fav_paper">Paper</button><br>
+<button name="subject" type="submit" value="fav_scissors">Scissors</button><br>
+</form> </th><td><input type="button" value="Go" onclick= randomGenerator(); ></td> <td>
+  </tr>
+  <tr>
+
+    <td>You Selected:</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Computer Selected:</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<p id="output"></p>
+	<script language="JavaScript">	
+    	var game = ["rock","paper","scissor"] ; //game.length = 3
+			var int1 = new Array(3) ;
+			var int2 = [1,,3] ;
+
+			for(var i=0; i<game.length; i++) {
+				document.getElementById('array1').innerHTML += game[i]+"rock";
+			}
+			//game[0] <- paper
+			//game[1] <- rock
+			//game[2] <- scissors 
+
+			for(var i=0; i<int1.length; i++){
+				document.getElementById('array2').innerHTML += int1[i]+="paper";
+			}
+
+			for(var i=0; i<int2.lungth; i++) {
+				documen.getElementById('array3').innerHTML += int2[i]="scissors";
+			} 
+
+			var game = ["paper","scissors","rock"];
+			var result = ["paper","scissors","rock","rock"];
+			
+			document.getElementById("array1").innerHTML = result.toString();
+			result.pop();
+			result.pop();
+			result.push("paper");
+			document.getElementById("array2").innerHTML = result.toString();
+         </script>
+
+<p>Amount of games that were played:</p>
+<p>Paper:<display number>Rock:<display number>Scissor:<display number></p> 
+<br>
+<br>
+<p><a href="games.js">Javascript!</a></p>
+<p><a href="game.css.html">CSS!</a></p>
+
+</body>
+</html>
